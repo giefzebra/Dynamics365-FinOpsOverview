@@ -72,7 +72,7 @@ An example of the return for the Customers V3 entity is shown below.
 Language codes given must be valid codes in Finance & Operations
 
     {
-        "@odata.context": "https://hsoukdemo-uat.sandbox.operations.dynamics.com/metadata/$metadata#Labels/$entity",
+        "@odata.context": "https://FinOpsURL/metadata/$metadata#Labels/$entity",
         "Id": "@AccountsReceivable:CustCustomerV3EntityLabel",
         "Language": "en-GB",
         "Value": "Customers V3"
