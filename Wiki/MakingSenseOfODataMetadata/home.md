@@ -16,6 +16,51 @@ This document will focus on metadata, further documents (including postman sampl
 ## Metadata
 This is a descriptive endpoint, which contains information about the data entities within the system, alongside information on labels, which are used in Finance & Operations to enable multilingual support.
 
+### Relationships
+The below diagram shows how each piece of metadata is related to each other, generally speaking
+
+- Labels are used in all element of Finance & Operations to enable a multilingual experience
+- The data entities collection contains the most extensive list of entities available within the system (n.b. this includes both standard and custom entities)
+- The public entity collection is most exhaustive and serves as the reference point when constructing odata calls
+- The public enumerations collection is used when constrained option values are required to be sent to Finance & Operations in POST requests or returned in GET's
+
+```mermaid
+ classDiagram
+      Labels <|-- DataEntities
+      Labels <|-- PublicEntities
+      Labels <|-- PublicEnumerations
+      DataEntities --> PublicEntities
+      PublicEntities --> PublicEnumerations
+      class Labels{
+          +String Id
+          +String Language
+      }
+      class DataEntities{
+          +String Name
+          +String PublicEntityName
+          +String PublicCollectionName
+          +String LabelId
+      }
+      class PublicEntities{
+          +String Name
+          +String EntitySetName
+          +String LabelId
+      }
+      class PublicEnumerations{
+          +String Name
+          +String LabelId
+      }
+```
+
+#### Relationship Keys
+
+| From Entity | To Entity | Relationship |
+| ----------- | --------- | ------------- 
+| __Any__ | Labels | __Entity__.LabelId = Labels.LabelId |
+| DataEntities | PublicEntities | DataEntities.PublicEntityName == PublicEntities.Name |
+| PublicEntities | PublicEnumerations | PublicEntities.LabelId == PublicEnumerations.LabelId |
+| PublicEntities | PublicEnumerations | PublicEntities.TypeName (minus Microsoft.Dynamics.DataEntities. ) == PublicEnumerations.Name |
+
 ### Labels
 This endpoint is at
 
