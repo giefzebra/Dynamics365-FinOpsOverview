@@ -21,7 +21,7 @@ TODO
 This entity contains information about individual entities and is a good starting point for understanding which entities are in the system.
 A sample of the data (based on the CustomerV3 entity) returned is illustrated below:
 
-'''json
+;;;
                 {
                     "Name": "CustCustomerV3Entity",
                     "PublicEntityName": "CustomerV3",
@@ -32,7 +32,7 @@ A sample of the data (based on the CustomerV3 entity) returned is illustrated be
                     "EntityCategory": "Master",
                     "IsReadOnly": false
                 }
-'''
+;;;
 
 This endpoint can be useful primarily for the last 4 elements shown in the sample.
 
