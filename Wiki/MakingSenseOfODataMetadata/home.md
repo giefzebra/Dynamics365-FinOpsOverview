@@ -124,18 +124,15 @@ This endpoint is at
 
 It contains much more extensive data on the content of the data entity. The below example shows the summary information of what is contained within the response, by section
 
-
-```json
     Name: 	                "CustomerV3"
     EntitySetName:	        "CustomersV3"
     LabelId: 	            "@AccountsReceivable:CustCustomerV3EntityLabel"
     IsReadOnly:	            false
     ConfigurationEnabled:	true
-    Properties	            […]
-    NavigationProperties	[…]
-    PropertyGroups	        []
-    Actions
-```
+    Properties:	            […]
+    NavigationProperties:	[…]
+    PropertyGroups:	        []
+    Actions:
 
 #### Subsections
 
