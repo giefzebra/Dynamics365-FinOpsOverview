@@ -22,16 +22,16 @@ This entity contains information about individual entities and is a good startin
 A sample of the data (based on the CustomerV3 entity) returned is illustrated below:
 
 
-                {
-                    "Name": "CustCustomerV3Entity",
-                    "PublicEntityName": "CustomerV3",
-                    "PublicCollectionName": "CustomersV3",
-                    "LabelId": "@AccountsReceivable:CustCustomerV3EntityLabel",
-                    "DataServiceEnabled": true,
-                    "DataManagementEnabled": true,
-                    "EntityCategory": "Master",
-                    "IsReadOnly": false
-                }
+    {
+        "Name": "CustCustomerV3Entity",
+        "PublicEntityName": "CustomerV3",
+        "PublicCollectionName": "CustomersV3",
+        "LabelId": "@AccountsReceivable:CustCustomerV3EntityLabel",
+        "DataServiceEnabled": true,
+        "DataManagementEnabled": true,
+        "EntityCategory": "Master",
+        "IsReadOnly": false
+    }
 
 
 This endpoint can be useful primarily for the last 4 elements shown in the sample.
