@@ -71,12 +71,14 @@ This endpoint is at
 An example of the return for the Customers V3 entity is shown below.
 Language codes given must be valid codes in Finance & Operations
 
+```json
     {
         "@odata.context": "https://FinOpsURL/metadata/$metadata#Labels/$entity",
         "Id": "@AccountsReceivable:CustCustomerV3EntityLabel",
         "Language": "en-GB",
         "Value": "Customers V3"
     }
+```
 
 ### Data Entities
 
@@ -87,7 +89,7 @@ This endpoint is at
 This entity contains information about individual entities and is a good starting point for understanding which entities are in the system.
 A sample of the data (based on the CustomerV3 entity) returned is illustrated below:
 
-
+```json
     {
         "Name": "CustCustomerV3Entity",
         "PublicEntityName": "CustomerV3",
@@ -98,7 +100,7 @@ A sample of the data (based on the CustomerV3 entity) returned is illustrated be
         "EntityCategory": "Master",
         "IsReadOnly": false
     }
-    
+```   
 
 Example at:
 
@@ -122,6 +124,8 @@ This endpoint is at
 
 It contains much more extensive data on the content of the data entity. The below example shows the summary information of what is contained within the response, by section
 
+
+```json
     Name: 	                "CustomerV3"
     EntitySetName:	        "CustomersV3"
     LabelId: 	            "@AccountsReceivable:CustCustomerV3EntityLabel"
@@ -131,6 +135,7 @@ It contains much more extensive data on the content of the data entity. The belo
     NavigationProperties	[…]
     PropertyGroups	        []
     Actions
+```
 
 #### Subsections
 
@@ -145,6 +150,7 @@ It contains much more extensive data on the content of the data entity. The belo
 This gives detail of an individual field exposed by the data entity, including the field name, the datatype, whether is is mandatory, read only etc...
 An example is given below of a property for how customer account statements are generated.
 
+```json
     {
         "Name": "AccountStatement",
         "TypeName": "Microsoft.Dynamics.DataEntities.CustAccountStatement",
@@ -161,6 +167,7 @@ An example is given below of a property for how customer account statements are 
         "DimensionLegalEntityProperty": null,
         "DimensionTypeProperty": null
     }
+```
 
 In the above example, the field is an enumeration (enum), which can be located in the [Public Enumerations](#Public-Enumerations) section.
 
@@ -177,7 +184,7 @@ It contains information about the enumeration options available for properties w
 The below example shows the Customer Account Statement option.
 **N.B.** The enum name will be used as the enum value, however the LabelId is used within the Dynamics 365 client to handle multi-lingual implementation.
 
-
+```json
     {
         "Name": "CustAccountStatement",
         "LabelId": "@SYS14680",
@@ -214,5 +221,6 @@ The below example shows the Customer Account Statement option.
             }
         ]
     }
+```
 
 
