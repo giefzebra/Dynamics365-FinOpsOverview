@@ -50,10 +50,6 @@ The below diagram shows how each piece of metadata is related to each other, gen
           +String Name
           +String LabelId
       }
-      link Labels "#Labels"
-      link DataEntities "#Data-Entities"
-      link PublicEntities "#Public-Entities"
-      link PublicEnumerations "#Public-Enumerations"
 ```
 
 #### Relationship Keys
