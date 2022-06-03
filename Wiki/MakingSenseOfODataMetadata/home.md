@@ -26,11 +26,11 @@ The below diagram shows how each piece of metadata is related to each other, gen
 
 ```mermaid
  classDiagram
-      Labels <|-- DataEntities
-      Labels <|-- PublicEntities
-      Labels <|-- PublicEnumerations
-      DataEntities --> PublicEntities
-      PublicEntities --> PublicEnumerations
+      DataEntities --|> PublicEntities : PublicEntities.Name = DataEntities.PublicEntityName
+      PublicEntities --|> PublicEnumerations : PublicEntities.TypeName = PublicEnumerations.Name
+      Labels <-- DataEntities : LabelId
+      Labels <|-- PublicEntities : LabelId
+      Labels <|-- PublicEnumerations : LabelId
       class Labels{
           +String Id
           +String Language
@@ -50,6 +50,10 @@ The below diagram shows how each piece of metadata is related to each other, gen
           +String Name
           +String LabelId
       }
+      link Labels "[Labels](#Labels)"
+      link DataEntities "[Data Entities](#Data-Entities)"
+      link PublicEntities "[Public Entities](#Public-Entities)"
+      link PublicEnumerations "[Public Enumerations](#Public-Enumerations)"
 ```
 
 #### Relationship Keys
