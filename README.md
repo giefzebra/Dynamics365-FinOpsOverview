@@ -4,4 +4,4 @@ This repository is going to be used for any documentation on things which I find
 Historically, I've tried to use video content, so I may look at embedding this where possible, but we shall see. I've only used GitHub previously for stashing C# learnings and bits I wanted to share with colleagues, so it'll be a fun journey!
 
 # Content
-[Making Sense of Metadata](Wiki\MakingSenseOfODataMetadata\home.md)
+[Making Sense of Metadata](Wiki/MakingSenseOfODataMetadata/home.html)
