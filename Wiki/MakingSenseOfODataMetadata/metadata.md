@@ -166,7 +166,7 @@ An example is given below of a property for how customer account statements are 
     }
 ```
 
-In the above example, the field is an enumeration (enum), which can be located in the [Public Enumerations](#Public-Enumerations) section.
+In the above example, the field is an enumeration (enum), which can be located in the [Public Enumerations](#public-enumerations) section.
 
 **N.B.** There are two ways to filter for a public enumeration when traversing from property to public enum, either via labelId = labelId or TypeName = Name
 If using the TypeName, the filter criteria should **not** include the __Microsoft.Dynamics.DataEntities.__ prefix
