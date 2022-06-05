@@ -1,4 +1,4 @@
-# Introduction
+# Making Sense of Metadata
 The purpose of this document is to give users an overview to the usage of OData ( https://www.odata.org/ ) and related endpoints within the context of Dynamics 365 Finance & Operations (F&O). I will cover basic concepts within the document, however users may wish to visit the odata.org site for a more detailed explaination of things like what a function means outside of the context of Finance & Operations.
 
 As always, this is my personal interpretation of the system, my background is that of a Dynamics 365 Finance & Operations (formerly 'AX') functional consultant, with a cursory knowledge of the underlying technology. 
