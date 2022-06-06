@@ -23,33 +23,7 @@ The below diagram shows how each piece of metadata is related to each other, gen
 - The public entity collection is most exhaustive and serves as the reference point when constructing odata calls
 - The public enumerations collection is used when constrained option values are required to be sent to Finance & Operations in POST requests or returned in GET's
 
-<div class="mermaid">
- classDiagram
-      DataEntities --|> PublicEntities : PublicEntities.Name = DataEntities.PublicEntityName
-      PublicEntities --|> PublicEnumerations : PublicEntities.TypeName = PublicEnumerations.Name
-      Labels <-- DataEntities : LabelId
-      Labels <|-- PublicEntities : LabelId
-      Labels <|-- PublicEnumerations : LabelId
-      class Labels{
-          +String Id
-          +String Language
-      }
-      class DataEntities{
-          +String Name
-          +String PublicEntityName
-          +String PublicCollectionName
-          +String LabelId
-      }
-      class PublicEntities{
-          +String Name
-          +String EntitySetName
-          +String LabelId
-      }
-      class PublicEnumerations{
-          +String Name
-          +String LabelId
-      }
-</div>
+![Entity Flow](../../img/entityflow.svg)
 
 #### Relationship Keys
 
